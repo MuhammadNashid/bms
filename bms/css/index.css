@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(252, 248, 248);
 }
 .ul{
     width: 100%;
@@ -26,7 +26,7 @@ img{
     margin-left: 30px;
     margin-bottom: 20px;
     outline: 0;
-    border: 0.1 solid black;
+    border: 0.3 solid gainsboro;
 }
 button{
     margin-top: 25px;
@@ -37,6 +37,7 @@ button{
     color: aliceblue;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 ul{
     list-style-type: none;
@@ -75,38 +76,114 @@ span{
  }
  .main1 img{
     width: 1000px;
-    height: 300px;
+    height: 310px;
     margin: 0px 0px;
     box-shadow: 2px 2px 8px rgb(202, 202, 201);
     border: 0;
     border-radius: 8px;
- }
- .main1{
-    animation: bannermove 5s linear infinite;
- }
-
- h2{
-    margin-left: 70px;
- }
+}
+.h2{
+    margin: 0;
+    background-color: white;
+}
+h2{
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
  .caro{
     display: flex;
-    margin-left: 140px;
+    width: 100%;
+    height: 550px;
+    background-color:white;
     padding: 15px 0;
+    margin-left: 60px;
     align-items: center;
    
  }
+ 
 .caro img{
     height: 400px;
     width: 250px;
-    margin: 40px;
+    margin: 20px 20px;
     border-radius: 6px; 
 }
 .container{
-    margin-left: 20px;
-}
-
-.img{
-    width: 150vh;
-    height: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
     
 }
+
+.container>.img{
+    width: 150vh;
+    height: 100px;
+    margin-top: 20px;
+}
+.head2{
+    margin: 0;
+    background-color: white;
+    
+}
+h3{
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.events{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-left: 200px;
+    
+}
+.events  img{
+   width: 200px;
+   height: 200px; 
+   margin: 0;
+   margin-left: 30px;
+   border-radius: 8px;
+   margin-top: 10px;
+}
+.mdiv{
+    width: 100%;
+    height: 600px;
+    margin-top: O;
+    background-color: #2d2f4d;
+}
+.prim{
+    width: 200px;
+    height: 200px;
+}
+.prim img{
+    width: 1000px;
+    height: 100px;
+    margin: 0;
+    margin-left: 210px;
+    
+}
+.heading span{
+    color: white;
+    margin-left: 210px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.heading p{
+    color: white;
+    margin-left: 210px;
+    margin-top: 0.5px;
+    
+}
+.pimg{
+    display:flex;
+   margin-left: 200px;
+}
+.pimg img{
+    width: 220px;
+    height: 300px;
+    margin: 0;
+    margin-left: 30px;
+    border-radius: 8px;
+}
+ 
