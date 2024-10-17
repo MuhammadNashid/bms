@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(230, 229, 229);
+}
+.ul{
+    width: 100%;
+    background-color: white;
+    justify-content: start;
+    margin: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.ul li{
+    margin-top: 20px;
+}
+img{
+    margin-left: 200px;
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#search{
+    height: 35px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 0.1 solid black;
+}
+button{
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}
+ul{
+    list-style-type: none;
+    margin-left:-10px;
+    width: 100%;
+    margin-top: -10px;
+    overflow: hidden;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+
+}
+li{
+    float: left;
+}
+li a {
+
+    display: block;
+    color: rgb(20, 19, 19);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+span{
+    margin-left: 400px;
+}
+ .main1{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 10px;
+ }
+ .main1 img{
+    width: 1000px;
+    height: 300px;
+    margin: 0px 0px;
+    box-shadow: 2px 2px 8px rgb(202, 202, 201);
+    border: 0;
+    border-radius: 8px;
+ }
+ .main1{
+    animation: bannermove 5s linear infinite;
+ }
+
+ h2{
+    margin-left: 70px;
+ }
+ .caro{
+    display: flex;
+    margin-left: 140px;
+    padding: 15px 0;
+    align-items: center;
+   
+ }
+.caro img{
+    height: 400px;
+    width: 250px;
+    margin: 40px;
+    border-radius: 6px; 
+}
+.container{
+    margin-left: 20px;
+}
+
+.img{
+    width: 150vh;
+    height: 100px;
+    
+}
