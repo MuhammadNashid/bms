@@ -82,7 +82,610 @@ span{
     border: 0;
     border-radius: 8px;
 }
-.h2{
+
+
+/* 2nd page */
+.carousel-item{
+    background-color: white;
+    margin-left: 0px;
+ }
+ h3{
+    margin-left: 100px;
+    font-size: 20px;
+    margin-bottom: auto;
+ }
+ .caro{
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    
+ }
+.caro img{
+    height: 350px;
+    width: 200px;
+    border-radius: 8px;
+    
+}
+.sh1 p{
+    margin: 0;
+    margin-left: 100px;
+    color: rgb(139, 135, 135);
+}
+.sh1{
+    margin-left: 100px;
+    font-weight: bold
+}
+/* 3rd page */
+.add{
+    margin-left: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.sd2 img{
+    width: 1400px;
+    height: 100px;
+
+}
+/* 4th page */
+.caros{
+    display: flex;
+    margin: 0;
+    padding: 15px 0;
+    margin-left: 90px;
+    margin-bottom: 70px;
+}
+h2{
+    margin-left: 130px;
+    margin-bottom: auto;
+}
+.caros1 img{
+    width: 230px;
+    height: 230px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 40PX;
+}
+
+/* 5th page */
+.car1 img{
+width: 1000px;
+height: 90px;
+margin-left: 100px;
+}
+.head5 span{
+color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 200px;
+}
+.head5 p{
+    font-weight: 0;
+    color: aliceblue;
+    margin-left: 200px;
+}
+ .fle{
+    display: flex;
+    margin-left: 0px;
+ }
+
+.sd3{
+    background-color:#2d2f4d;
+    width: 100%;
+    height: 100%;
+}
+.carose1 img{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    margin-left: 150px;
+}
+.sh2 p{
+    margin: 0;
+    margin-left: 130px;
+    color: rgb(247, 235, 235);
+    margin-bottom: 50px;
+}
+.sh2{
+    color: aliceblue;
+    margin-left: 130px;
+    
+}
+/* 6th page */
+.six{
+    display: flex;
+    margin-left: 130px;  
+}
+ h4{
+    color: rgb(59, 51, 51);
+    margin: 0;
+    margin-left: 180px;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;
+ }
+.slid img{
+    width: 200px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;
+}
+.slid div{
+    margin-top: 10px;
+}
+.sd p{
+    margin: 0;
+    margin-left: 43px;
+    color: rgb(128, 126, 126);
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+.sd{
+    margin: 0;
+    justify-content: start;
+    color: rgb(9, 10, 10);
+    margin-left: 43px;
+    font-size: 17px;
+    
+}
+.sd span{
+    margin-left: 43px;
+}
+
+/* 7th page */
+h5{
+    color: rgb(59, 51, 51);
+    margin: 0;
+    margin-left: 200px;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;  
+}
+.sev{
+    display: flex;
+    margin-left: 150px;
+}
+
+.sds img{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;
+}
+.sd1{
+    margin: 0;
+    margin-left: 40px;
+}
+.sd1 p{
+    margin: 0;
+    margin-left: 40px;
+    color: rgb(128, 126, 126) ;
+}
+.sd1 span{
+    margin-left: 40px;
+}
+.sds div{
+margin-top: 10px;
+}
+
+/* 8th page */
+.eigh{
+    display: flex;
+    margin-left: 150px;
+}
+.sds1 img{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;
+}
+
+/* 9th page */
+.nin{
+    display: flex;
+    margin-left: 150px;
+}
+.sds1{
+    margin-top: 10px;
+}
+.sds1 div{
+    margin-top: 8px;
+}
+/* 10th page */
+.ten{
+    display: flex;
+    margin-left: 150px;
+}
+
+/* 11th page */
+/* .lev{
+    display: flex;
+    margin-left: 150px;
+} */
+
+/* 12thpage */
+.fot{
+    display: flex;
+    margin-left: 200px;
+}
+
+.f1{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f1 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f1 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.f2{
+    margin-left: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f2 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f2 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.f3{
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f3 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f3 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.fot2{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* 13th page */
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+.foot1{
+    margin: 0;
+    padding: 15px 15px;
+}
+.btn2{
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 8px 8px;
+    box-shadow: 0 3px 3px black;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .carousel-item{
+    background-color: white;
+    margin-left: 0px;
+ }
+ h3{
+    margin-left: 100px;
+    font-size: 20px;
+    margin-bottom: auto;
+ }
+ .caro{ 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    
+ }
+.caro img{
+    height: 350px;
+    width: 200px;
+    border-radius: 8px;
+    
+}
+.sh1 p{
+    margin: 0;
+    margin-left: 100px;
+    color: rgb(139, 135, 135);
+}
+.sh1{
+    margin-left: 100px;
+    font-weight: bold
+}
+/* 3rd page
+.add{
+    margin-left: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.sd2 img{
+    width: 1400px;
+    height: 100px;
+
+}
+/* 4th page */
+/* .caros{
+    display: flex;
+    margin: 0;
+    padding: 15px 0;
+    margin-left: 90px;
+    margin-bottom: 70px;
+}
+h2{
+    margin-left: 130px;
+    margin-bottom: auto;
+}
+.caros1 img{
+    width: 230px;
+    height: 230px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 40PX;
+} */
+
+/* 5th page */
+/* .car1 img{
+    width: 1000px;
+    height: 90px;
+    margin-left: 200px;
+}
+.head5 span{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 200px;
+}
+.head5 p{
+    font-weight: 0;
+    color: aliceblue;
+    margin-left: 200px;
+}
+ .fle{
+    display: flex;
+    margin-left: 0px;
+ }
+
+.sd3{
+    background-color:#2d2f4d;
+    width: 100%;
+    height: 100%;
+}
+.carose1 img{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    margin-left: 100px;
+}
+.sh2 p{
+    margin: 0;
+    margin-left: 200px;
+    color: rgb(247, 235, 235);
+    margin-bottom: 50px;
+}
+.sh2{
+    color: aliceblue;
+    margin-left: 200px;
+    
+} */
+/* 6th page */
+/* .six{
+    display: flex;
+    margin-left: 130px;
+    
+}
+ h4{
+    color: rgb(59, 51, 51);
+    margin: 0;
+    margin-left: 180px;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;
+ }
+.slid img{
+    width: 200px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;
+}
+.slid div{
+    margin-top: 10px;
+}
+.sd p{
+    margin: 0;
+    margin-left: 43px;
+    color: rgb(128, 126, 126);
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+.sd{
+    margin: 0;
+    justify-content: start;
+    color: rgb(9, 10, 10);
+    margin-left: 43px;
+    font-size: 17px;
+    
+}
+.sd span{
+    margin-left: 43px;
+} */
+
+/* 7th page */
+/* h5{
+    color: rgb(59, 51, 51);
+    margin: 0;
+    margin-left: 200px;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;  
+}
+.sev{
+    display: flex;
+    margin-left: 150px;
+}
+
+.sds img{
+    width: 200px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;   
+    margin-left: 100px;
+}
+.sd1{
+    margin: 0;
+    margin-left: 40px;    
+    height: 90px;
+    margin-left: 100px;
+}
+.sd1 span{
+    margin-left: 40px;
+}
+.sds div{
+    margin-top: 10px;
+} */
+
+/* 8th page */
+/* .eigh{
+    display: flex;
+    margin-left: 150px;
+}
+.sds1 img{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0;
+    margin-left: 50px;
+} */
+
+/* 9th page */
+/* .nin{
+    display: flex;
+    margin-left: 150px;
+}
+.sds1{
+    margin-top: 10px;
+}
+.sds1 div{
+    margin-top: 8px;
+} */
+/* 10th page */
+/* .ten{
+    display: flex;
+    margin-left: 150px;
+} */
+
+/* 11th page */
+/* .lev{
+    display: flex;
+    margin-left: 150px;
+}   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .h2{
     margin: 0;
     background-color: white;
 }
@@ -97,7 +700,7 @@ h2{
     height: 550px;
     background-color:white;
     padding: 15px 0;
-    margin-left: 60px;
+    margin-left: 70px;
     align-items: center;
    
  }
@@ -106,6 +709,90 @@ h2{
     height: 400px;
     width: 250px;
     margin: 20px 20px;
+    margin-left: 70px;
+    border-radius: 6px; 
+}
+.container{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    
+}
+
+.container>.img{
+    width: 150vh;
+    height: 100px;
+    margin-top: 20px;
+}
+.head2{
+    margin: 0;
+    background-color: white;
+    
+}
+h3{
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.events{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-left: 200px;
+    
+}
+.events  img{
+   width: 200px;
+   height: 200px; 
+   margin: 0;
+   margin-left: 30px;
+   border-radius: 8px;
+   margin-top: 10px;
+}
+.mdiv{
+    width: 100%;
+    height: 600px;
+    margin-top: O;
+    background-color: #2d2f4d;
+}
+.prim{
+    width: 200px;
+    height: 200px;
+}
+.prim img{
+    width: 1000px;
+    height: 100px;
+    margin: 0;
+    margin-left: 210px;
+    
+}
+.heading span{
+    color: white;.h2{
+    margin: 0;
+    background-color: white;
+}
+h2{
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+ .caro{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background-color:white;
+    padding: 15px 0;
+    margin-left: 70px;
+    align-items: center;
+   
+ }
+ 
+.caro img{
+    height: 400px;
+    width: 250px;
+    margin: 20px 20px;
+    margin-left: 70px;
     border-radius: 6px; 
 }
 .container{
@@ -186,4 +873,24 @@ h3{
     margin-left: 30px;
     border-radius: 8px;
 }
- 
+    margin-left: 210px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.heading p{
+    color: white;
+    margin-left: 210px;
+    margin-top: 0.5px;
+    
+}
+.pimg{
+    display:flex;
+   margin-left: 200px;
+}
+.pimg img{
+    width: 220px;
+    height: 300px;
+    margin: 0;
+    margin-left: 30px;
+    border-radius: 8px;
+} */
