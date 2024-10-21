@@ -1,0 +1,56 @@
+body{
+    background-color: azure;
+}
+.amheading{
+    text-align: center;
+    text-decoration:1.5px underline ;
+    padding: 50px 0px;
+}
+.main-block{
+    width: 650px;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 40px 0px;
+}
+.ins-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.ins-form input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+.ins-form textarea{
+    width: 300px;
+    height: 100px;
+    border-radius: 3px;
+}
+.insbtn{
+    text-align: center;
+    padding: 20px;
+}
+.ins-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad-btn{
+    background-color: rgb(12, 168, 12);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+.save-btn{
+    background-color: rgb(40, 81, 187);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
