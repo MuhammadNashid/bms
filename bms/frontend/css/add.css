@@ -8,6 +8,7 @@ body{
 }
 .main-block{
     width: 650px;
+    
     margin: auto;
     background-color: lightgray;
     border-radius: 10px;
