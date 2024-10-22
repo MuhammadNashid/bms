@@ -1,5 +1,5 @@
 import movieSchema from './model/moviem.js'
-
+import userSchema from './model/user.model.js'
 import bcrypt from 'bcrypt'
 
 export async function addMovie(req,res) {
@@ -72,7 +72,10 @@ export async function addUser(req,res) {
 
     bcrypt.hash(pwd,10).then((hpwd)=>{
         console.log(hpwd);
-        userSchema.create({username,email,pwd:hpwd})
+        console.log("data added");
+        userSchema.create({username,email,pwd:hpwd}).then(()=>{
+            res.status(201).send({msg:"Successfull"})
+        })
 
     }).catch((error)=>{
         console.log(error);
