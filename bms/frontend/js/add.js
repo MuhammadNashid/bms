@@ -16,7 +16,7 @@ document.getElementById('form').addEventListener('submit',async function (e) {
     
     console.log(name,rating,vote,visual,lang,duration,category,released,about,cardpic,bgpic);
 
-    const res=await fetch('http://localhost:4000/api/add',{
+    const res=await fetch('http://localhost:5000/api/add',{
         method:"POST",
         headers:{"content-Type":'application/json'},
         body:JSON.stringify({name,rating,vote,visual,lang,duration,category,released,about,cardpic,bgpic})

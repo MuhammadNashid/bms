@@ -8,7 +8,7 @@ document.getElementById('form').addEventListener('submit',async function (e){
 
     console.log(name,email,pass,cpass);
 
-    const res=await fetch('http://localhost:4000/api/adduser',{
+    const res=await fetch('http://localhost:5000/api/adduser',{
         method: "post",
         headers:{"Content-Text":"application/json"},
         body:JSON.stringify({name,email,pass,cpass})

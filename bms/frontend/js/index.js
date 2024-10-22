@@ -1,5 +1,5 @@
 async function getMovies() {
-    const res = await fetch("http://localhost:4000/api/getMovies");
+    const res = await fetch("http://localhost:5000/api/getMovies");
     const movie=await res.json();
     console.log(movie);
     str=``;

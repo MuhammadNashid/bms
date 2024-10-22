@@ -1,7 +1,8 @@
 import movieSchema from './model/moviem.js'
 import userSchema from './model/user.model.js'
 import bcrypt from 'bcrypt'
-
+import pkg from 'jsonwebtoken'
+const {sign}=pkg
 export async function addMovie(req,res) {
 
     console.log(req.body);
@@ -81,5 +82,26 @@ export async function addUser(req,res) {
         console.log(error);
         
     })
+    
+}
+
+export async function login(req,res){
+    console.log(req.body);
+    const {email,pass}=req.body;
+    // console.log(email,pass);
+
+    if(!(email&&pass))
+        return res.status(500).send({msg:"fields are empty"})
+    const user= await userSchema.findOne({email})
+
+    if(!user)
+        return res.status(500).send({msg:"user not exist"})
+    const success= await bcrypt.compare(pass,user.pass)
+    console.log(success);
+    if(success !==true)
+        return res.status(500).send({msg:"user or password not exist"})
+    const token=await sign({UserID:user._id},process.env.JWT_KEY,{expiresIn:"24h"})
+    res.status(200).send(token)
+    
     
 }

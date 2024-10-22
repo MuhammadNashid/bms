@@ -4,7 +4,7 @@ const id=urlParams.get("id");
 console.log(id);
 
 async function getdata() {
-    const res=await fetch(`http://localhost:4000/api/getMovie/${id}`)
+    const res=await fetch(`http://localhost:5000/api/getMovie/${id}`)
     const data=await res.json();
     console.log(data);
     document.getElementById('js-section').innerHTML=`
@@ -147,7 +147,7 @@ async function getdata() {
 getdata()
 
 function deletedata(id) {
-    fetch(`http://localhost:4000/api/deleteMovie/${id}`,{
+    fetch(`http://localhost:5000/api/deleteMovie/${id}`,{
         method:"DELETE",
         headers:{"Content-Type":"application/json"}
     })

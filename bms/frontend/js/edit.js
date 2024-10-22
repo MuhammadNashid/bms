@@ -5,7 +5,7 @@ console.log(id);
 let pic1,pic2
 
 async function getdata() {
-    const res=await fetch(`http://localhost:4000/api/getMovie/${id}`)
+    const res=await fetch(`http://localhost:5000/api/getMovie/${id}`)
     const data=await res.json();
     console.log(data);
 
@@ -44,7 +44,7 @@ document.getElementById('form').addEventListener('submit',async function (e) {
     
     console.log(name,rating,vote,visual,lang,duration,category,released,about,cardpic,bgpic);
 
-    const res=await fetch(`http://localhost:4000/api/update/${id}`,{
+    const res=await fetch(`http://localhost:5000/api/update/${id}`,{
         method:"PUT",
         headers:{"content-Type":'application/json'},
         body:JSON.stringify({name,rating,vote,visual,lang,duration,category,released,about,cardpic,bgpic})
