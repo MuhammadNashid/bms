@@ -2,7 +2,7 @@ import movieSchema from './model/moviem.js'
 import userSchema from './model/user.model.js'
 import bcrypt from 'bcrypt'
 import pkg from 'jsonwebtoken'
-const {sign}=pkg
+const{sign}=pkg
 export async function addMovie(req,res) {
 
     console.log(req.body);
@@ -65,17 +65,17 @@ export async function deleteemp(req, res) {
 
 export async function addUser(req,res) {
     console.log(req.body);
-    const {username,email,pwd,cpwd}=req.body
-    if(!(username&&email&&pwd&&cpwd))
+    const {username,email,pass,cpass}=req.body
+    if(!(username&&email&&pass&&cpass))
         return res.status(500).send({msg:"fields are empty"});
-    if(pwd!=cpwd)
+    if(pass!=cpass)
         return res.status(500).send({msg:"password not match"});
 
-    bcrypt.hash(pwd,10).then((hpwd)=>{
-        console.log(hpwd);
+    bcrypt.hash(pass,10).then((hpass)=>{
+        console.log(hpass);
         console.log("data added");
-        userSchema.create({username,email,pwd:hpwd}).then(()=>{
-            res.status(201).send({msg:"Successfull"})
+        userSchema.create({username,email,pass:hpass}).then(()=>{
+            res.status(201).send({msg:"Success"})
         })
 
     }).catch((error)=>{
@@ -87,7 +87,7 @@ export async function addUser(req,res) {
 
 export async function login(req,res){
     console.log(req.body);
-    const {email,pass}=req.body;
+    const{email,pass}=req.body;
     // console.log(email,pass);
 
     if(!(email&&pass))

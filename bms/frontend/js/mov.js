@@ -4,7 +4,7 @@ const id=urlParams.get("id");
 console.log(id);
 
 async function getdata() {
-    const res=await fetch(`http://localhost:5000/api/getMovie/${id}`)
+    const res=await fetch(`http://localhost:4000/api/getMovie/${id}`)
     const data=await res.json();
     console.log(data);
     document.getElementById('js-section').innerHTML=`
@@ -63,33 +63,33 @@ async function getdata() {
           <h2>Cast</h2>
     <div class="cast-card-block">
           <div class="cast-card">
-            <div ><img src="../image/star1.avif" alt=""></div>
+            <div ><img src="../images/star1.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div><img src="../image/star2.avif" alt=""></div>
+            <div><img src="../images/star2.avif" alt=""></div>
             <div>Amitabh Bachchan</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div><img src="../image/star3.avif" alt=""></div>
+            <div><img src="../images/star3.avif" alt=""></div>
             <div>Fahadh Faasil</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div><img src="../image/star4.avif" alt=""></div>
+            <div><img src="../images/star4.avif" alt=""></div>
             <div>Rana Daggubatti</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div><img src="../image/star5.jpg" alt=""></div>
-            <div>Ritika Singh</div>
+            <div><img src="../images/star5.avif" alt=""></div>
+            <div>Manju Warrier</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div><img src="../image/star6.avif" alt=""></div>
-            <div>Dushara Vijayan</div>
+            <div><img src="../images/star6.avif" alt=""></div>
+            <div>Ritika singh</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
@@ -109,27 +109,27 @@ async function getdata() {
         <h2>Crew</h2>
         <div class="cast-card-block">
           <div class="cast-card">
-            <div ><img src="../image/st1.avif" alt=""></div>
+            <div ><img src="../images/star1.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div ><img src="../image/st2.avif" alt=""></div>
+            <div ><img src="../images/star2.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div ><img src="../image/st3.avif" alt=""></div>
+            <div ><img src="../images/star3.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div ><img src="../image/st4.avif" alt=""></div>
+            <div ><img src="../images/star4.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
           <div class="cast-card">
-            <div ><img src="../image/st5.avif" alt=""></div>
+            <div ><img src="../images/star5.avif" alt=""></div>
             <div>Rajinikanth</div>
             <div>Actor</div>
           </div>
@@ -141,13 +141,42 @@ async function getdata() {
         <a href="./edit.html?id=${data._id}"><button class="edit-btn">Edit</button></a>
         <button class="del-btn" onclick="deletedata('${data._id}')">Delete</button>
     </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footmain">
+        <div class="footer1">
+            <img src="../images/hut.svg" alt="">
+            <div class="p"><b>List your Show </b>.Got a show, event,activity or a great experience? Partner with us & getlisted on BookMyShow</div>
+            <div><button>Contact today!</button></div>
+        </div>
+        <div class="footer2">
+            <img src="../images/customer.jpg" alt="" width="100px" height="50px">
+            <div class="fp1"><p> 24/7 CUSTOMER CARE</p></div>
+            <img src="../images/confirmation.jpg" alt="" width="100px" height="50px">
+            <div class="fp1"><p>RESEND BOOKING CONFIRMATION</p></div>
+            <img src="../images/subscribe.jpg" alt="" width="100px" height="50px">
+            <div class="fp1"><p>SUBSCRIBE TO THE NEWSLETTER</p></div>
+        </div>
+        <div class="pg"><span>MOVIES NOW SHOWING IN KOCHI<p>Bougainvillea|Vettaiyan|A.R.M|The Wild Robot|Porattu Nadakam|Kishkindha Kaandam|Sattam En Kayil|Smile2|Jigar|Vicky Vidya Ka Woh Wala Video</p></span></div>
+        <div class="pg"><span>UPCOMINGMOVIES IN KOCHI <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident autem praesentium laborum totam aliquid cumque possimus eaque ratione explicabo qui quam delectus vero, iste facilis necessitatibus pariatur, tenetur aspernatur!</p></span></div>
+        <div class="pg"><span>MOVIES BY GENERS <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, dolore sunt, suscipit eligendi laudantium fugit dignissimos voluptatem voluptas, eius sint maxime ea ullam nobis. Quis quia nihil consequuntur est tempore?</P></span></div>
+        <div class="pg"><span>MOVIE BY LANGUAGE <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit ipsam delectus odit molestiae? Numquam iure veniam itaque odit dignissimos ipsam amet, non nulla id expedita eius, ab temporibus culpa.</P></span></div>
+    
+        <div class="imgs">
+            <img src="../images/show2.png" alt="">
+        </div>
+    </div>
+    </footer>
     `
     document.getElementById('bg-img').style.backgroundImage=`linear-gradient(90deg, rgb(26, 26, 26) 24.97%, rgb(26, 26, 26) 38.3%, rgba(26, 26, 26, 0.04) 90.47%, rgb(26, 26, 26) 100%), url('${data.bgpic}')`;
 }
 getdata()
 
 function deletedata(id) {
-    fetch(`http://localhost:5000/api/deleteMovie/${id}`,{
+    fetch(`http://localhost:4000/api/deleteMovie/${id}`,{
         method:"DELETE",
         headers:{"Content-Type":"application/json"}
     })

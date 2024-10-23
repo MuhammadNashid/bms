@@ -6,14 +6,13 @@ dotenv.config()
 
 const app = express();
 
-
 app.use(express.json({limit:'50mb'}));
 app.use(express.static('frontend'));
 app.use('/api', Router);
 
 
 connection().then(() => {
-    app.listen(process.env.port, () => {
+    app.listen(process.env.port,() => {
         console.log(`server started at http://localhost:${process.env.port}`);
     });
 }).catch((error) => {
