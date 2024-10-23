@@ -1,4 +1,4 @@
-document.getElementById('form').addEventListener('submit',async function (e){
+document.getElementById('forms').addEventListener('submit',async function (e){
     e.preventDefault();
 
     username=document.getElementById('username').value
@@ -18,7 +18,7 @@ document.getElementById('form').addEventListener('submit',async function (e){
     const data=await res.json()
     if(res.status==201){
         alert(data.msg)
-        window.location.href="./index.html"
+        window.location.href="../index.html"
     }
     else{
         alert(data.error)
