@@ -12,6 +12,6 @@ router.route('/update/:id').put(rh.update)
 router.route('/deleteMovie/:id').delete(rh.deleteemp)
 router.route('/adduser').post(rh.addUser)
 router.route('/login').post(rh.login)
-// router.route('/home').get(Auth,rh.home)
+// router.route('/home').get(rh.home)
 
 export default router;

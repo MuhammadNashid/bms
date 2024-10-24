@@ -1,9 +1,8 @@
 async function getMovies() {
-    const token=localStorage.getItem("token")
+    const token =localStorage.getItem("token")
     const res = await fetch("http://localhost:4000/api/getMovies",{
         headers:{"authorization":`Bearer ${token}`}
     });
-    
     const movie=await res.json();
     console.log(movie);
     str=``;

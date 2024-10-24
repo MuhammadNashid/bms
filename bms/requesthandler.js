@@ -1,5 +1,5 @@
 import movieSchema from './model/moviem.js'
-import userSchema from './model/user.model.js'
+import userSchema from './model/adduser.js'
 import bcrypt from 'bcrypt'
 import pkg from 'jsonwebtoken'
 const{sign}=pkg
@@ -18,18 +18,19 @@ export async function addMovie(req,res) {
 }
 
 export async function getMovies(req, res) {
-console.log("====================");
-console.log(req.user);
-const usr=await userSchema.findOne({_id:req.user.UserID})
-console.log(usr);
-
-
+    console.log("=======================");
+    console.log(req.user);
+    const usr=await userSchema.findOne({_id:req.user.UserID})
+    console.log(usr);
     console.log("get data");
 
     const data = await movieSchema.find();
     console.log(data);
     res.status(200).send({data,user:usr.name}); 
 }
+
+
+
 
 export async function getMovie(req,res) {
     console.log(req.params);
@@ -71,35 +72,35 @@ export async function deleteemp(req, res) {
 
 export async function addUser(req,res) {
     console.log(req.body);
-    const {username,email,pass,cpass}=req.body
+    const{username,email,pass,cpass}=req.body
     if(!(username&&email&&pass&&cpass))
-        return res.status(500).send({msg:"fields are empty"});
+        return res.status(500).send({msg:"empty"})
     if(pass!=cpass)
-        return res.status(500).send({msg:"password not match"});
+        return res.status(500).send({msg:"not match"})
 
     bcrypt.hash(pass,10).then((hpwd)=>{
-        console.log(hpwd);
-        console.log("data added");
-        userSchema.create({username,email,pass:hpwd}).then(()=>{
-            res.status(201).send({msg:"Success"})
-        })
+console.log(hpwd);
+console.log("data added");
+
+userSchema.create({username,email,pass:hpwd}).then(()=>{
+    res.status(201).send({msg:"success"})
+})
 
     }).catch((error)=>{
         console.log(error);
         
     })
-    
+
 }
 
-export async function login(req,res){
+
+export async function login(req,res) {
     console.log(req.body);
-    const{email,pass}=req.body;
-    // console.log(email,pass);
+    const{email,pass}=req.body
 
     if(!(email&&pass))
-        return res.status(500).send({msg:"fields are empty"})
-    const user= await userSchema.findOne({email})
-
+        return res.status(500).send({msg:"field are empty"})
+    const user=await userSchema.findOne({email})
     if(!user)
         return res.status(500).send({msg:"user not exist"})
     const success= await bcrypt.compare(pass,user.pass)
@@ -107,15 +108,12 @@ export async function login(req,res){
     if(success !==true)
         return res.status(500).send({msg:"user or password not exist"})
     const token=await sign({UserID:user._id},process.env.JWT_KEY,{expiresIn:"24h"})
-    res.status(200).send(token)    
+    res.status(200).send(token)
 }
 
-
-export async function home(req,res){
-    console.log("end point");
-    console.log(req.user.UserID);
-    const user=userSchema.findOne({_id:req.user.UserID});
+export async function home(req,res) {
+ console.log("end point");
+ console.log(req.user.UserID);
+ const user=userSchema.findOne({_id:req.user.UserID})
     res.status(200).send({user:user.username})
-    
-    
 }
